@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Développeur Web Full-Stack</title>
+      <meta name="description" content="Portfolio de Nathan Roussel, développeur web full-stack. Projets, compétences, expérience et contact.">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      </head>
+  <body>
+
+    <!-- Contrôles CSS pour le mode dark  -->
+    <input type="checkbox" id="theme-toggle" class="control-input">
+    <input type="checkbox" id="nav-toggle" class="control-input">
+
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+    <div class="page-wrapper">
+
+      <!-- Header -->
+      <header class="site-header">
+        <div class="header-inner">
+          <a href="#hero" class="logo" aria-label="Retour en haut de page">
+            <span class="logo-bracket">[</span>PORTFOLIO<span class="logo-bracket">]</span>
+          </a>
+
+          <label for="nav-toggle" class="nav-burger" aria-label="Ouvrir le menu de navigation">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-links">
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#skills">Compétences</a></li>
+              <li><a href="#projects">Projets</a></li>
+              <li><a href="#experience">Expérience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <label for="theme-toggle" class="theme-switch" aria-label="Activer le mode clair">
+            <span class="theme-switch-track">
+              <span class="theme-switch-thumb"></span>
+            </span>
+            <span class="visually-hidden">Basculer entre mode sombre et mode clair</span>
+          </label>
+        </div>
+      </header>
+
+      <main id="main">
+
+        <!-- section hero-->
+        <section id="hero" class="hero">
+          <div class="blueprint-grid" aria-hidden="true"></div>
+          <div class="container hero-inner">
+
+            <div class="hero-photo frame">
+              <img src="images/portrait.jpeg" alt="Portrait d'Excel Arden Bayenda" width="140" height="140">
+            </div>
+
+            <div class="hero-text">
+              <p class="eyebrow">// Portfolio — Rév. 2.6</p>
+              <h1>Arden BAYENDA</h1>
+              <p class="hero-subtitle">Développeur Web Full-Stack en formation, je conçois des interfaces précises qui tiennent la route.</p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Voir les projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+              </div>
+            </div>
+
+            <div class="title-block frame">
+              <div class="tb-row"><span class="tb-label">Nom complet</span><span class="tb-value">BAYENDA Excel Arden</span></div>
+              <div class="tb-row"><span class="tb-label">Rôle</span><span class="tb-value">Dév. Full-Stack</span></div>
+              <div class="tb-row"><span class="tb-label">Stack</span><span class="tb-value">React · Node · TS</span></div>
+              <div class="tb-row"><span class="tb-label">Statut</span><span class="tb-value tb-status">Disponible</span></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--A propos -->
+        <section id="about" class="section">
+          <div class="container">
+            <h2 class="section-title"><span class="section-num">01</span> À propos</h2>
+
+            <div class="about-grid">
+            <div class="about-text">
+                <p>Je m'appelle Excel Arden Bayenda, étudiant finaliste en Licence Génie Logiciel au CFI CIRAS, basé à Brazzaville. J'ai commencé à coder en 2023 : le C++ en première année pour poser les bases algorithmiques, puis Java, JavaScript, HTML/CSS et Flutter en deuxième année, et Python en troisième année.</p>
+                <p>Ce parcours m'a appris à passer d'un paradigme à l'autre sans perdre mes repères, comprendre la logique derrière un langage plutôt que d'apprendre sa syntaxe par cœur.</p>
+                <p>En parallèle de ma dernière année de licence, je suis actuellement une formation complémentaire en développement Full-Stack à Akieni Academy, pour renforcer mes compétences web et construire des projets concrets, avec l'objectif d'évoluer vers un poste de développeur full-stack.</p>
+              </div>
+
+                <ul class="about-facts frame">
+                  <li><span class="fact-num">2</span><span class="fact-label">ans de code (depuis 2023)</span></li>
+                  <li><span class="fact-num">10+</span><span class="fact-label">projets / TP réalisés</span></li>
+                  <li><span class="fact-num">5</span><span class="fact-label">langages pratiqués</span></li>
+                  <li><span class="fact-num">2</span><span class="fact-label">formations en cours</span></li>
+                </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section section-alt">
+          <div class="container">
+            <h2 class="section-title"><span class="section-num">02</span> Compétences</h2>
+
+            <div class="skills-grid">
+              <div class="skill-group frame">
+                <h3>Front-end</h3>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div class="skill-head"><span>HTML / CSS</span><span>80%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+                  </li>
+                  <li class="skill">
+                    <div class="skill-head"><span>JavaScript</span><span>50%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:50%"></div></div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="skill-group frame">
+                <h3>Back-end </h3>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div class="skill-head"><span>C++</span><span>75%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+                  </li>
+                  <li class="skill">
+                    <div class="skill-head"><span>Git / GitHub</span><span>75%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+                  </li>
+                  <li class="skill">
+                    <div class="skill-head"><span>Java</span><span>30%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:30%"></div></div>
+                  </li>
+                  <li class="skill">
+                    <div class="skill-head"><span>Python</span><span>50%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="--pct:50%"></div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- projet -->
+        <section id="projects" class="section">
+          <div class="container">
+            <h2 class="section-title"><span class="section-num">03</span> Projets</h2>
+
+            <div class="filter-bar" role="group" aria-label="Filtrer les projets par technologie">
+              <input type="radio" name="tech-filter" id="filter-all" class="control-input filter-input" checked>
+              <input type="radio" name="tech-filter" id="filter-htmlcss" class="control-input filter-input">
+              <input type="radio" name="tech-filter" id="filter-cpp" class="control-input filter-input">
+              <input type="radio" name="tech-filter" id="filter-python" class="control-input filter-input">
+              <div class="filter-labels">
+                <label for="filter-all">Tous</label>
+                <label for="filter-htmlcss">HTML/CSS</label>
+                <label for="filter-cpp">C++</label>
+                <label for="filter-python">Python</label>
+              </div>
+              <div class="projects-grid">
+
+                <article class="project-card frame" data-tech="htmlcss">
+                  <div class="project-thumb">
+                    <img src="images/dashboard.jpeg" alt="Capture d'écran du Dashboard Admin" loading="lazy" width="300" height="200">
+                  </div>
+                  <div class="project-body">
+
+                    <h3>Dashboard Admin</h3>
+                    <p class="project-desc">Interface d'administration avec statistiques, tableaux et navigation latérale, en HTML/CSS pur.</p>
+                    <p class="project-desc-long">Ce dashboard structure une vue d'ensemble cartes de stats, tableau de données, menu latéral — avec une mise en page en grille pensée pour rester lisible même avec beaucoup d'informations affichées.</p>
+                    <ul class="tag-list">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                      <a href="https://github.com/Arden-13/Dashboard" target="_blank" rel="noopener noreferrer">Code source ↗</a>
+                    </div>
+                  </div>
+                </article>
+
+               <article class="project-card frame" data-tech="htmlcss">
+                <div class="project-thumb">
+                  <img src="images/yekola.jpeg" alt="Capture d'écran de la landing page Yekola" loading="lazy" width="300" height="200">
+                </div>
+                <div class="project-body">
+                  <h3>Yekola — Landing page e-learning</h3>
+                  <p class="project-desc">Landing page pour Yekola, une plateforme d'e-learning, avec un design entièrement responsive.</p>
+                  <p class="project-desc-long">Page de présentation pensée pour convertir : structure claire (accroche, avantages, appel à l'action), mise en page qui s'adapte du mobile au desktop, réalisée dans le cadre de la formation Akieni Academy.</p>
+                  <ul class="tag-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/Arden-13/Landing_page" target="_blank" rel="noopener noreferrer">Code source ↗</a>
+                  </div>
+                </div>
+              </article>
+
+                <article class="project-card frame" data-tech="htmlcss">
+                  <div class="project-thumb">
+                    <img src="images/galérie.jpeg" alt="Capture d'écran de la galérie" loading="lazy" width="300" height="200">
+                  </div>
+                  <div class="project-body">
+                    <h3>Galerie Paysages africains</h3>
+                    <p class="project-desc">Galerie photo mettant en valeur des paysages africains, en grille responsive.</p>
+                    <p class="project-desc-long">Cette galerie organise une sélection de paysages dans une grille d'images qui s'adapte à la taille de l'écran, avec un travail sur les espacements et les ratios pour garder une mise en page harmonieuse.</p>
+                    <ul class="tag-list">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                      <a href="https://github.com/Arden-13/Galerie" target="_blank" rel="noopener noreferrer">Code source ↗</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-card frame" data-tech="htmlcss">
+                  <div class="project-thumb">
+                    <img src="images/restaurant.jpeg" alt="Capture d'écran du Menu du restaurant" loading="lazy" width="300" height="200">
+                  </div>
+                  <div class="project-body">
+                     <h3>Menu de restaurant</h3>
+                    <p class="project-desc">Menu présentant les plats par catégorie, avec du HMTL uniquement.</p>
+                    <p class="project-desc-long">Une page de menu qui organise entrées, plats et desserts avec une typographie et une hiérarchie visuelle pensées pour donner envie, tout en restant simple à mettre à jour, réaliser dans le cadre de ma formation à Akieni Academy.</p>
+                    <ul class="tag-list">
+                      <li>HTML</li>
+                    </ul>
+                    <div class="project-links">
+                      <a href="https://github.com/Arden-13/Menu_Restaurant" target="_blank" rel="noopener noreferrer">Code source ↗</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-card frame" data-tech="cpp">
+                  <div class="project-thumb">
+                    <img src="images/snack.jpeg" alt="projet snack" loading="lazy" width="300" height="200">
+                  </div>
+                  <div class="project-body">
+                    <h3>Snake — C++ / SFML</h3>
+                    <p class="project-desc">Le jeu Snake classique, développé en C++ avec la bibliothèque graphique SFML.</p>
+                    <p class="project-desc-long">Projet de fin de semestre : Snake recodé de zéro en C++, avec gestion de la boucle de jeu, des collisions et du score via SFML — un bon exercice d'algorithmique et de gestion mémoire.</p>
+                    <ul class="tag-list">
+                      <li>C++</li>
+                      <li>SFML</li>
+                    </ul>
+                      <div class="project-links">
+                        <span class="proj-link proj-link-disabled">Code source bientôt disponible</span>
+                      </div>
+                  </div>
+                </article>
+
+                <article class="project-card frame" data-tech="Python">
+                  <div class="project-thumb">
+                    <img src="images/baskapp.jpg" alt="capture d'écran de baskapp" loading="lazy" width="300" height="200">
+                  </div>
+                  <div class="project-body">
+                    <h3>Gestion de compétition de Basket</h3>
+                    <p class="project-desc">Application de gestion d'une compétition de basket-ball, en Python.</p>
+                    <p class="project-desc-long">Une application Python pour gérer une compétition : équipes, matchs, scores et classement, avec une logique de traitement de données pensée pour rester simple à faire évoluer.</p>
+                    <ul class="tag-list"><li>Python</li></ul>
+                    <div class="project-links">
+                      <span class="proj-link proj-link-disabled">Code source bientôt disponible</span>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section section-alt">
+          <div class="container">
+            <h2 class="section-title"><span class="section-num">04</span> Expérience</h2>
+
+            <ol class="timeline">
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content frame">
+                  <p class="timeline-date">2025 — Présent</p>
+                  <h3>Formation Full-Stack · Akieni Academy</h3>
+                  <p>Formation complémentaire en développement web, menée en parallèle de la licence : HTML, CSS, JavaScript, et réalisation de livrables concrets (dashboard, blog, galerie, menu de restaurant...).</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content frame">
+                  <p class="timeline-date">2024 — 2025</p>
+                  <h3>3ème année Licence Génie Logiciel · CFI CIRAS</h3>
+                  <p>Approfondissement en Python : structuration de programmes et logique de traitement de données.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content frame">
+                  <p class="timeline-date">2023 — 2024</p>
+                  <h3>2ème année Licence Génie Logiciel · CFI CIRAS</h3>
+                  <p>Découverte de Java, puis du développement web (JavaScript, HTML, CSS) et du mobile avec Flutter.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content frame">
+                  <p class="timeline-date">Déc. 2022 — 2023</p>
+                  <h3>1ère année Licence Génie Logiciel · CFI CIRAS</h3>
+                  <p>Entrée en licence, premiers pas en programmation avec le C++ et les fondamentaux algorithmiques.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section">
+          <div class="container contact-grid">
+            <div>
+              <h2 class="section-title"><span class="section-num">05</span> Contact</h2>
+              <p class="contact-intro">Un projet en tête, une question, ou juste envie d'échanger ? Écrivez-moi, je réponds sous 48h.</p>
+
+              <ul class="contact-links">
+                <li>
+                  <a href="mailto:nathan.roussel@example.com">
+                    <span class="contact-label">Email</span>
+                    <span>jamesbayenda3@gmail.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Arden-13" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-label">GitHub</span>
+                    <span>github.com/Arden-13</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/arden-bayenda-a454a5337?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-label">LinkedIn</span>
+                    <span>linkedin.com/in/arden-bayenda</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="contact-form frame" action="mailto:nathan.roussel@example.com" method="post" enctype="text/plain">
+              <div class="form-field">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            </form>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>© 2026 Excel Arden Bayenda. Conçu et codé à la main, sans framework.</p>
+          <ul class="social-list" aria-label="Réseaux sociaux">
+            <li>
+              <a href="https://github.com/Arden-13" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/arden-bayenda-a454a5337?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20.5H6.94V8.5ZM5.25 3.5A1.96 1.96 0 1 0 5.27 7.42 1.96 1.96 0 0 0 5.25 3.5ZM20.5 20.5H17.13V14.6C17.13 13.14 16.6 12.15 15.3 12.15C14.32 12.15 13.75 12.82 13.5 13.46C13.4 13.7 13.38 14.03 13.38 14.36V20.5H10V8.5H13.38V10C13.86 9.24 14.75 8.15 16.58 8.15C18.86 8.15 20.5 9.63 20.5 12.83V20.5Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/Arden BAYENDA" target="_blank" rel="noopener noreferrer" aria-label="Profil X (Twitter)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3H21.6L15.6 10.1L22.6 21H17.1L12.8 14.7L7.9 21H5.2L11.6 13.4L4.9 3H10.5L14.4 8.8L18.9 3ZM17.9 19.3H19.4L9.7 4.6H8.1L17.9 19.3Z"/></svg>
+              </a>
+            </li>
+          </ul>
+          <a href="#hero" class="back-to-top">↑ Haut de page</a>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
