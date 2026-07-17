@@ -1,7 +1,5 @@
 # Portfolio Personnel - Projet 6.2 
 
-![Portfolio Preview](./assets/images/preview.png)
-
 ## 📌 Description
 
 Ce projet est un portfolio personnel réalisé dans le cadre de ma formation en développement web à Akieni Academy.
